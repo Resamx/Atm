@@ -1,0 +1,62 @@
+body {
+
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle, transparent 25%, #232323  26%),linear-gradient(45deg, transparent 46%, #1f1f1f 47%, #1f1f1f 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #1f1f1f 47%, #1f1f1f 52%, transparent 53%);
+  background-size: 2em 2em;
+  background-color: #232323;
+  opacity: 1
+}
+
+.atm {
+  width: 300px;
+  height: 260px;
+  background-color: #200E3A;
+  color: #52D3D8;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  text-align: center;
+  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #fff;
+  z-index: 1;
+  background: #05054D;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #38419D;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #e8e8e8;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
